@@ -1,0 +1,7 @@
+{
+  "name": "RTDB_NotPush",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
