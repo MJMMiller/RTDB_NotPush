@@ -1,27 +1,40 @@
-#container {
+ion-title{
   text-align: center;
-
+}
+#cintainer{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.circular-progress {
+  position: relative;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  background: conic-gradient(#FFE503 3.6deg, #e3e3e3 0deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.circular-progress::before {
+  content: "";
   position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  height: 210px;
+  width: 210px;
+  border-radius: 50%;
+  background-color: #1E1E1F
+}
+.progress-value {
+  position: relative;
+  font-size: 40px;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+}
+.text {
+  font-size: 28px;
+  font-weight: 500;
+  color: #606060;
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
-}
-
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
-}
-
-#container a {
-  text-decoration: none;
-}
